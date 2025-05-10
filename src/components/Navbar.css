@@ -1,0 +1,140 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--space-3) 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  padding: var(--space-2) 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--neutral-800);
+  text-decoration: none;
+}
+
+.logo .highlight {
+  color: var(--primary-500);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: var(--space-4);
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--neutral-700);
+  padding: var(--space-2);
+  position: relative;
+}
+
+.nav-link.active {
+  color: var(--primary-500);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--primary-500);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--neutral-800);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: var(--space-3) 0;
+    z-index: 1;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .nav-item {
+    margin: var(--space-2) 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar.scrolled {
+    background-color: rgba(31, 41, 55, 0.95);
+  }
+
+  .logo {
+    color: var(--neutral-100);
+  }
+
+  .nav-link {
+    color: var(--neutral-300);
+  }
+
+  .menu-icon {
+    color: var(--neutral-200);
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      background-color: var(--neutral-800);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.skill-bar {
+  margin-bottom: var(--space-3);
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-1);
+}
+
+.skill-name {
+  font-weight: 600;
+  color: var(--neutral-700);
+}
+
+.skill-percentage {
+  font-weight: 600;
+  color: var(--primary-500);
+}
+
+.skill-progress {
+  height: 8px;
+  background-color: var(--neutral-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  background-color: var(--primary-500);
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .skill-name {
+    color: var(--neutral-300);
+  }
+  
+  .skill-progress {
+    background-color: var(--neutral-700);
+  }
+}

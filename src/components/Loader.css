@@ -1,0 +1,52 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-50);
+  z-index: 9999;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.logo-loader {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--neutral-800);
+  position: relative;
+}
+
+.logo-loader .highlight {
+  color: var(--primary-500);
+}
+
+.dots-container {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-500);
+}
+
+@media (prefers-color-scheme: dark) {
+  .loader-container {
+    background-color: var(--neutral-900);
+  }
+  
+  .logo-loader {
+    color: var(--neutral-100);
+  }
+}
