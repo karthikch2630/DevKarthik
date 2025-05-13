@@ -37,7 +37,7 @@ export const projectsData = [
     image: 'https://images.pexels.com/photos/1170979/pexels-photo-1170979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     technologies: ['Python', 'Keras', 'CNN', 'Machine Learning'],
     github: 'https://github.com/karthikch2630/skin-disease-prediction',
-    demo: 'https://demo.com'
+    demo: 'https://skin-disease-detector.streamlit.app/'
   },
   {
     id: 5,
