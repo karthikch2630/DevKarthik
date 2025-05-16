@@ -19,7 +19,7 @@ export const projectsData = [
     image: 'https://images.pexels.com/photos/4050290/pexels-photo-4050290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'JavaScript'],
     github: 'https://github.com/karthikch2630/voice-note-task-manager',
-    demo: 'https://demo.com'
+    demo: 'https://voice-note-task-manager.vercel.app/'
   },
   {
     id: 3,
