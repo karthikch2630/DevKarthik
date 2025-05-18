@@ -27,7 +27,7 @@ export const projectsData = [
     description: 'Tracks objects using deep learning models like Faster R-CNN and DeepSORT. Built with Streamlit for interactive UI.',
     image: 'https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     technologies: ['Python', 'OpenCV', 'Deep Learning', 'Computer Vision'],
-    github: 'https://github.com/karthikch2630/object-tracking',
+    github: 'https://github.com/karthikch2630/Object-Tracker',
     demo: 'https://object-detector-tracker.streamlit.app/'
   },
   {
@@ -36,7 +36,7 @@ export const projectsData = [
     description: 'Image classification system using CNN to predict skin diseases from user-uploaded images.',
     image: 'https://images.pexels.com/photos/1170979/pexels-photo-1170979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     technologies: ['Python', 'Keras', 'CNN', 'Machine Learning'],
-    github: 'https://github.com/karthikch2630/skin-disease-prediction',
+    github: 'https://github.com/karthikch2630/Skin-Disease-Detector',
     demo: 'https://skin-disease-detector.streamlit.app/'
   },
   {

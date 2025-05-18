@@ -80,7 +80,7 @@ const Projects = () => {
                       <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
                         <FaGithub />
                       </a>
-                      <a href={"https://voice-note-task-manager.vercel.app"} target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
                         <FaExternalLinkAlt />
                       </a>
                     </div>
