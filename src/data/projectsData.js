@@ -28,7 +28,7 @@ export const projectsData = [
     image: 'https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     technologies: ['Python', 'OpenCV', 'Deep Learning', 'Computer Vision'],
     github: 'https://github.com/karthikch2630/object-tracking',
-    demo: 'https://demo.com'
+    demo: 'https://object-detector-tracker.streamlit.app/'
   },
   {
     id: 4,
