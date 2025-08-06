@@ -45,10 +45,10 @@ const Footer = () => {
         
         <div className="footer-bottom">
           <p className="copyright">
-            &copy; {currentYear} Karthik Chitti | Full Stack & AI Developer. All rights reserved.
+            &copy; {currentYear} Karthik Chitti | Full Stack Developer. All rights reserved.
           </p>
           <p className="footer-note">
-            Built with React + Vite
+            
           </p>
 
         </div>

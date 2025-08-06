@@ -7,15 +7,15 @@ import './About.css'
 const About = () => {
   const skills = [
   { name: 'JavaScript', level: 90 },
-  { name: 'Python', level: 85 },
   { name: 'React.js', level: 85 },
   { name: 'Node.js', level: 80 },
   { name: 'Express.js', level: 80 },
   { name: 'MongoDB', level: 75 },
+  { name: 'TypeScript', level: 60},
   { name: 'HTML/CSS', level: 85 },
   { name: 'Tailwind CSS', level: 80 },
   { name: 'SQL', level: 70 },
-  { name: 'AI/ML', level: 75 },
+ 
   { name: 'Git/GitHub', level: 85 },
   { name: 'Postman (API Testing)', level: 80 },
   { name: 'REST APIs', level: 85 },
@@ -60,7 +60,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="container">
-        <motion.h2 
+        <motion.h2
           className="section-title"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -69,9 +69,9 @@ const About = () => {
         >
           About Me
         </motion.h2>
-        
+
         <div className="about-content">
-          <motion.div 
+          <motion.div
             className="about-text"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -79,25 +79,42 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h3>Who I Am</h3>
-           <p>
-  I'm a passionate Full Stack Developer with expertise in JavaScript, Python, React.js, Node.js, and MongoDB. 
-  With years of hands-on experience, I've built and mentored projects ranging from AI-powered apps to real-time 
-  tracking systems. My journey began with a curiosity about how technology drives the digital world, and it has 
-  evolved into a career focused on building intelligent, scalable, and user-friendly web applications.
-</p>
+            <p>
+              I'm a passionate <strong>Full Stack Developer</strong> with
+              expertise in{" "}
+              <strong>
+                JavaScript, Python, React.js, Node.js, and MongoDB
+              </strong>
+              . Over the years, I’ve designed, developed, and mentored projects
+              ranging from <strong>AI-powered applications</strong> to{" "}
+              <strong>real-time tracking systems</strong>. What began as a
+              curiosity about how technology powers the digital world has grown
+              into a career focused on building{" "}
+              <strong>
+                intelligent, scalable, and user-friendly web applications
+              </strong>
+              .
+            </p>
 
             <p>
-              I specialize in the MERN stack (MongoDB, Express.js, React, and Node.js) but am always 
-              exploring new technologies. I believe in writing clean, maintainable code and creating 
-              intuitive user experiences that solve real problems.
+              I primarily specialize in the <strong>MERN stack</strong>{" "}
+              (MongoDB, Express.js, React, and Node.js), but I’m constantly
+              exploring new tools and technologies to stay ahead in this
+              fast-evolving field. I'm committed to writing{" "}
+              <strong>clean, maintainable code</strong> and crafting{" "}
+              <strong>intuitive user experiences</strong> that make a meaningful
+              impact.
             </p>
+
             <p>
-              When I'm not coding, you can find me hiking in the mountains, reading science fiction, 
-              or experimenting with new recipes in the kitchen.
+              When I’m not coding, you’ll likely find me{" "}
+              <strong>hiking in the mountains</strong>,{" "}
+              <strong>reading science fiction</strong>, or{" "}
+              <strong>experimenting with new recipes</strong> in the kitchen.
             </p>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="skills-container"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -107,7 +124,7 @@ const About = () => {
             <h3>My Skills</h3>
             <div className="skills-grid">
               {skills.map((skill, index) => (
-                <motion.div 
+                <motion.div
                   key={skill.name}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -120,8 +137,8 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-        
-        <motion.div 
+
+        <motion.div
           className="services-section"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -131,14 +148,17 @@ const About = () => {
           <h3>Services I Offer</h3>
           <div className="services-grid">
             {services.map((service, index) => (
-              <motion.div 
-                key={service.title} 
+              <motion.div
+                key={service.title}
                 className="service-card"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 viewport={{ once: true }}
-                whileHover={{ y: -10, boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)" }}
+                whileHover={{
+                  y: -10,
+                  boxShadow: "0 10px 25px rgba(0, 0, 0, 0.1)",
+                }}
               >
                 <div className="service-icon">{service.icon}</div>
                 <h4>{service.title}</h4>
@@ -149,7 +169,7 @@ const About = () => {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
 
 export default About

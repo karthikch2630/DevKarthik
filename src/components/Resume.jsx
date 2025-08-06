@@ -6,7 +6,7 @@ import { education, experience } from '../data/resumeData'
 const Resume = () => {
   const handleDownload = () => {
     // Opens the PDF in a new tab for download/view
-    window.open('https://drive.google.com/uc?export=download&id=1dSLSiT7wKd8aLDpHcjQuFLeMaJZzbWqh', '_blank')
+    window.open('https://drive.google.com/file/d/1e_FcrzXNqtWe6ryK63lTcPn7b9IaRwsF/view?usp=sharing', '_blank')
   }
 
   return (
