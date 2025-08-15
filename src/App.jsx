@@ -9,6 +9,7 @@ import ContactPage from './pages/ContactPage'
 import { AnimatePresence } from 'framer-motion'
 import Loader from './components/Loader'
 import './App.css'
+import CertificationsPage from './pages/CertificationsPage'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -33,6 +34,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/resume" element={<ResumePage />} />
+            <Route path="/certifications" element={<CertificationsPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </AnimatePresence>

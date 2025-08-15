@@ -1,0 +1,39 @@
+/* Certifications.css */
+
+/* Smooth scaling animation */
+.cert-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Glass effect for tilt */
+.cert-card.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Logo styling */
+.cert-logo {
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover .cert-logo {
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* Title styling */
+.cert-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Provider text */
+.cert-provider {
+  font-size: 0.9rem;
+  color: #666;
+}
